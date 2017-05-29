@@ -114,7 +114,9 @@ extension UIView {
         self.getGradient()?.removeFromSuperlayer()
         
         for view in self.subviews {
-            view.alpha = 1
+			UIView.animate(withDuration: 0.5, animations: {
+				view.alpha = 1
+			})
         }
     }
 	

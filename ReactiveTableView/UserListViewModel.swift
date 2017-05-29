@@ -35,7 +35,7 @@ class UserListViewModel {
 	}
 	
 	static func fakeUsers() -> ResultStatus<User> {
-		let users = (1...3).map { _ in User() }
+		let users = (1...5).map { _ in User() }
 		return ResultStatus(elements: users, loading: true)
 	}
 }
